@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity"
+        android:background="@color/colorPrimaryLight">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_scrollFlags="scroll|enterAlways">
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/coordinatorLayour"
+        android:orientation="vertical"
+        android:background="@color/colorWhite"
+        android:padding="@dimen/activity_horizontal_margin"
+        >
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/strBioName"
+            android:layout_margin="@dimen/margins_bio"
+            android:textSize="@dimen/strBioTextTitle"
+            android:textAlignment="center"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+            <ImageView
+                android:id="@+id/ImageViewBio"
+                android:layout_width="@dimen/sizeImageBio"
+                android:layout_height="@dimen/sizeImageBio"
+                android:src="@drawable/usermale"
+                android:layout_margin="@dimen/margins_bio"
+                android:textSize="@dimen/strBioTextText"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strBioFullName1"
+                    android:textSize="@dimen/strBioTextText"
+                    android:layout_margin="@dimen/margins_bio"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strBioSureame1"
+                    android:textSize="@dimen/strBioTextText"
+                    android:layout_margin="@dimen/margins_bio"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strBioAge1"
+                    android:textSize="@dimen/strBioTextText"
+                    android:layout_margin="@dimen/margins_bio"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strBioFullName2"
+                    android:textSize="@dimen/strBioTextText"
+                    android:layout_margin="@dimen/margins_bio"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strBioSureame2"
+                    android:textSize="@dimen/strBioTextText"
+                    android:layout_margin="@dimen/margins_bio"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strBioAge2"
+                    android:textSize="@dimen/strBioTextText"
+                    android:layout_margin="@dimen/margins_bio" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/strBioBio1"
+            android:textSize="@dimen/strBioTextText"
+            android:layout_margin="@dimen/margins_bio"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/strBioBio2"
+            android:textSize="@dimen/strBioTextText"
+            android:layout_margin="@dimen/margins_bio"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
+
+

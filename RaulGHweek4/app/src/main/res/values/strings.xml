@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Petagram</string>
+    <string name="appMenuStar">Favoritos</string>
+    <string name="appMenuAcercaDe">Acerca de</string>
+    <string name="appMenuContacto">Contacto</string>
+    <string name="appMenuGuardarCuenta">Configurar cuenta</string>
+
+    <string name="strBioName">RaulGH</string>
+    <string name="strBioFullName1">Nombre:</string>
+    <string name="strBioFullName2">Raúl</string>
+    <string name="strBioSureame1">Apellido:</string>
+    <string name="strBioSureame2">Guerra</string>
+    <string name="strBioAge1">Edad:</string>
+    <string name="strBioAge2">28</string>
+    <string name="strBioBio1">Biografía:</string>
+    <string name="strBioBio2">Estudiante de "Desarrollo de aplicaciones móviles con Android". Universidad Nacional Autónoma de México</string>
+
+    <string name="strCommentName">Nombre</string>
+    <string name="strCommentEmail">Email</string>
+    <string name="strCommentPassword">Password</string>
+    <string name="strCommentComment">Contenido</string>
+    <string name="strCommentButton">Enviar</string>
+
+    <string name="strPerfilMascotaName">Nuestra mascota</string>
+
+    <string name="strSharedVariableUserId">SharedVariableUserId</string>
+    <string name="strSharedVariableDeviceId">SharedVariableDeviceId</string>
+    <string name="strSharedVariableFirebaseId">SharedVariableFirebaseId</string>
+    <string name="strSharedVariableUserProfilePicture">SharedVariableUserProfilePicture</string>
+    <string name="strSharedVariableUserMascotaName">SharedVariableUserMascotaName</string>
+
+    <string name="strAccountTittle">Petagram</string>
+    <string name="strAccountText">Escribe tu usuario</string>
+    <string name="strAccountButton">Guardar Cuenta</string>
+    <string name="strNotificationButton">Recibir notificaciones</string>
+
+</resources>

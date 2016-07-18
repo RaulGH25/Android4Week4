@@ -1,0 +1,32 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="elevation_action_bar">4dp</dimen>
+    <dimen name="cardView_margins">16dp</dimen>
+    <dimen name="textSize_petName">20dp</dimen>
+    <dimen name="textSize_petLikes">20dp</dimen>
+    <dimen name="textSize_marginLikes">5dp</dimen>
+    <dimen name="cardCornerRadius">5dp</dimen>
+
+    <dimen name="margins_bio">5dp</dimen>
+    <dimen name="strBioTextTitle">24dp</dimen>
+    <dimen name="strBioTextText">16dp</dimen>
+    <dimen name="sizeImageBio">150dp</dimen>
+
+    <dimen name="perfilCircleImageSize">150dp</dimen>
+    <dimen name="perfilCircleImageBorderSize">1dp</dimen>
+    <dimen name="perfilCircleImageShadowSize">4dp</dimen>
+    <dimen name="perfilCircleMargins">10dp</dimen>
+    <dimen name="perfilTextSizeName">20dp</dimen>
+    <dimen name="perfilNameMarginBotton">10dp</dimen>
+    <dimen name="perfilCardMargins">4dp</dimen>
+    <dimen name="perfilTextLikes">16dp</dimen>
+    <dimen name="perfilImageHeight">150dp</dimen>
+    <dimen name="perfilYellowBoneSize">20dp</dimen>
+    <dimen name="perfilBotTextMargins">10dp</dimen>
+
+    <dimen name="floatingButtonMargins">20dp</dimen>
+
+
+</resources>

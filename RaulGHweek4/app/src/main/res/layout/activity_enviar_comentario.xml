@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity"
+        android:background="@color/colorPrimaryLight">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_scrollFlags="scroll|enterAlways">
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/coordinatorLayour"
+        android:orientation="vertical"
+        android:background="@color/colorWhite"
+        android:padding="@dimen/activity_horizontal_margin"
+        >
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/editTextNameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/editTextName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/strCommentName"
+                android:inputType="textCapCharacters"
+                android:selectAllOnFocus="true"
+                android:nextFocusDown="@+id/editEmail" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/editTextEmailLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/editEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/strCommentEmail"
+                android:inputType="textCapCharacters"
+                android:selectAllOnFocus="true"
+                android:nextFocusDown="@+id/editPassword" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/editTextPasswordLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/editPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/strCommentPassword"
+                android:inputType="textPassword"
+                android:selectAllOnFocus="true"
+                android:nextFocusDown="@+id/editTextComment" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/editTextCommentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/editTextComment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/strCommentComment"
+                android:selectAllOnFocus="true"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/buttonMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/strCommentButton"
+            android:theme="@style/MyRaisedButton"
+            android:layout_gravity="bottom"
+            android:selectAllOnFocus="true" />
+
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+

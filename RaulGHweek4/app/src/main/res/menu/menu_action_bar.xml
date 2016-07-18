@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- "Mark Favorite", should appear as action button if possible -->
+    <item
+        android:id="@+id/button_star"
+        android:icon="@drawable/ic_star"
+        android:title="@string/appMenuStar"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/button_contacto"
+        android:title="@string/appMenuContacto"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/button_acercade"
+        android:title="@string/appMenuAcercaDe"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/button_guardarcuenta"
+        android:title="@string/appMenuGuardarCuenta"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/button_recibirnotificaciones"
+        android:title="@string/strNotificationButton"
+        app:showAsAction="never"/>
+
+</menu>

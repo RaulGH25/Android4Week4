@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/circularImageView"
+        android:layout_width="@dimen/perfilCircleImageSize"
+        android:layout_height="@dimen/perfilCircleImageSize"
+        android:layout_margin="@dimen/perfilCircleMargins"
+        android:src="@drawable/mascota1"
+        android:layout_gravity="center"
+        app:civ_border="true"
+        app:civ_border_color="@color/colorAccent"
+        app:civ_border_width="8dp"
+        app:civ_shadow="true"
+        app:civ_shadow_color="@color/colorAccent"
+        app:civ_shadow_radius="10" />
+
+    <TextView
+        android:id="@+id/textViewOurPetName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/perfilTextSizeName"
+        android:layout_marginBottom="@dimen/perfilNameMarginBotton"
+        android:textAlignment="center"
+        android:text="@string/strPerfilMascotaName" />
+
+    <ImageView
+        android:id="@+id/horizontalLine"
+        android:background="@color/colorPrimaryLight"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/perfilCardMargins" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/RecyclerView_ListOurPet"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/action_bar"
+        android:background="@color/colorPrimaryLight"/>
+    
+
+</LinearLayout>

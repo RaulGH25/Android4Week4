@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="gh25.raul.raulghweek3" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name=".MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SecondActivity"
+            android:parentActivityName=".MainActivity" >
+            <!-- Para soporte a versiones anteriores a 4.0 -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" >
+            </meta-data>
+        </activity>
+        <activity android:name=".BioDesarrollador"
+            android:parentActivityName=".MainActivity">
+            <!-- Para soporte a versiones anteriores a 4.0 -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" >
+            </meta-data>
+        </activity>
+        <activity android:name=".EnviarComentario"
+            android:parentActivityName=".MainActivity">
+            <!-- Para soporte a versiones anteriores a 4.0 -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" >
+            </meta-data>
+        </activity>
+        <activity android:name=".GuardarCuenta"
+            android:parentActivityName=".MainActivity">
+            <!-- Para soporte a versiones anteriores a 4.0 -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" >
+            </meta-data>
+        </activity>
+    </application>
+
+    <service
+        android:name=".NotificationService">
+        <intent-filter>
+            <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+        </intent-filter>
+    </service>
+
+    <service
+        android:name=".NotificationIDTokenService">
+        <intent-filter>
+            <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+        </intent-filter>
+    </service>
+
+    <receiver android:name=".Follow">
+        <intent-filter>
+            <action android:name = "FOLLOW"/>
+        </intent-filter>
+    </receiver>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+</manifest>
